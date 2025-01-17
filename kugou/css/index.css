@@ -1,0 +1,1521 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 13px;
+}
+li {
+  list-style: none;
+}
+.clearfix:after,
+.clearfix:before,
+#mainPage #music_and_mv:after,
+#mainPage #music_and_mv:before,
+#mainPage #music_and_mv > .left .content li:after,
+#mainPage #music_and_mv > .left .content li:before,
+#mainPage #music_and_mv > .right .title:after,
+#mainPage #music_and_mv > .right .title:before,
+#mainPage #music_and_mv > .right .content .bottom:after,
+#mainPage #music_and_mv > .right .content .bottom:before,
+#mainPage #books .title:after,
+#mainPage #books .title:before,
+#mainPage #books .content > ul > li a .text:after,
+#mainPage #books .content > ul > li a .text:before,
+#mainPage #friend .title:after,
+#mainPage #friend .title:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.banner_btn_active {
+  width: 12px !important;
+  height: 12px !important;
+  background: #fff !important;
+  border-radius: 6px !important;
+  margin: -2px 0 0 -2px;
+}
+.big_play_button_center {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../images/sprite.png") no-repeat 0 -542px;
+}
+.big_play_button_center:hover {
+  background-position: 0 -489px;
+}
+.small_play_button_center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite.png") no-repeat 0 -401px;
+}
+.small_play_button_center:hover {
+  background-position: 0 -360px;
+}
+#mainPage {
+  min-width: 1000px;
+}
+#mainPage #header {
+  width: 1000px;
+  height: 38px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#mainPage #header .logo {
+  width: 152px;
+  margin-right: 43px;
+  float: left;
+}
+#mainPage #header .search {
+  width: 278px;
+  height: 36px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0 10px;
+  float: left;
+  margin-right: 56px;
+}
+#mainPage #header .search div:nth-child(1) {
+  height: 100%;
+  width: 244px;
+  float: left;
+}
+#mainPage #header .search div:nth-child(1) input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+#mainPage #header .search div:nth-child(2) {
+  position: relative;
+  height: 100%;
+  width: 34px;
+  line-height: 34px;
+  text-align: center;
+  float: left;
+}
+#mainPage #header .search div:nth-child(2) .search_icon {
+  position: absolute;
+  left: 18px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../images/search.png") no-repeat -40px -56px;
+}
+#mainPage #header .search div:nth-child(2) .search_icon:hover {
+  background-position-y: -86px;
+}
+#mainPage #header .nav {
+  height: 100%;
+  float: left;
+}
+#mainPage #header .nav li {
+  height: 20px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 9px;
+}
+#mainPage #header .nav li a {
+  color: #777;
+  text-decoration: none;
+  font-size: 13px;
+}
+#mainPage #header .nav li a:hover {
+  color: #169af3;
+}
+#mainPage #header .nav li:last-child {
+  border-right: 1px solid #e6e6e6;
+  padding-right: 34px;
+}
+#mainPage #header .login_btn {
+  float: right;
+  margin: 4px 65px 0 0;
+}
+#mainPage #header .login_btn a {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  background: #169af3;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+}
+#mainPage #banner .nav {
+  width: 100%;
+  height: 55px;
+  background: #2c323b;
+}
+#mainPage #banner .nav .content {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+#mainPage #banner .nav .content .left {
+  float: left;
+}
+#mainPage #banner .nav .content .left > ul > li {
+  float: left;
+}
+#mainPage #banner .nav .content .left > ul > li > a {
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 30px;
+}
+#mainPage #banner .nav .content .left > ul > li > a:hover {
+  color: #fff;
+  background-color: #0c8ed9 !important;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-child(1) a {
+  color: #fff;
+  background: #0c8ed9;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1) {
+  position: relative;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1):hover > a {
+  background-image: url("../images/arrowMoreu.png");
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1):hover ul {
+  display: block;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1) ul {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1) ul li a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  width: 112px;
+  font-size: 15px;
+  background: #252b34;
+  color: #bbb;
+  text-align: center;
+  text-decoration: none;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1) ul li a:hover {
+  background: #2d343d;
+  color: #fff;
+  display: block;
+}
+#mainPage #banner .nav .content .left > ul > li:nth-last-child(1) > a {
+  width: 52px;
+  background: url("../images/arrowMored.png") no-repeat right 20px center;
+}
+#mainPage #banner .nav .content .right {
+  float: right;
+}
+#mainPage #banner .nav .content .right li {
+  float: left;
+}
+#mainPage #banner .nav .content .right li a {
+  display: block;
+  height: 19px;
+  line-height: 19px;
+  float: left;
+  font-size: 13px;
+  color: #ddd;
+  text-decoration: none;
+  margin: 18px 15px 0 0;
+  padding-left: 20px;
+  background: url("../images/sprite.png") no-repeat;
+}
+#mainPage #banner .nav .content .right li a:hover {
+  color: #169af3;
+}
+#mainPage #banner .nav .content .right li:nth-child(1) a {
+  background-position: 0 -119px;
+}
+#mainPage #banner .nav .content .right li:nth-child(1) a:hover {
+  background-position: 0 -101px;
+}
+#mainPage #banner .nav .content .right li:nth-child(2) a {
+  background-position: 0 -281px;
+}
+#mainPage #banner .nav .content .right li:nth-child(2) a:hover {
+  background-position: 0 -245px;
+}
+#mainPage #banner .nav .content .right li:nth-child(3) a {
+  background-position: 0 -191px;
+}
+#mainPage #banner .nav .content .right li:nth-child(3) a:hover {
+  background-position: 0 -173px;
+}
+#mainPage #banner .nav .content .right li:nth-child(4) a {
+  background: url("../images/eadc2676a352ce14ec5f8050c8c42061.png") no-repeat left center;
+}
+#mainPage #banner .nav .content .right li:nth-child(5) a {
+  background-position: 0 -1308px;
+}
+#mainPage #banner .nav .content .right li:nth-child(5) a:hover {
+  background-position: 0 -1289px;
+}
+#mainPage #banner .nav .content .right li:nth-child(6) a {
+  background: url("../images/7366e06d43da71239d4f2ebd24b4e02e.png") no-repeat left center;
+}
+#mainPage #banner .content {
+  width: 100%;
+  position: relative;
+}
+#mainPage #banner .content .images li {
+  opacity: 0;
+  transition: opacity 1s;
+}
+#mainPage #banner .content > ul:nth-child(1) {
+  width: 100%;
+  height: 446px;
+  position: relative;
+}
+#mainPage #banner .content > ul:nth-child(1) > li {
+  width: 100%;
+  position: absolute;
+}
+#mainPage #banner .content > ul:nth-child(1) > li a {
+  display: block;
+  height: 446px;
+  width: 100%;
+  background: center top no-repeat;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(1) {
+  z-index: 20;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(1) a {
+  background-image: url("../images/20200406233800728240.jpg");
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(2) {
+  z-index: 19;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(2) a {
+  background-image: url("../images/20200407114244160948.jpg");
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(3) {
+  z-index: 18;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(3) a {
+  background-image: url("../images/20210331193634536168.jpg");
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(4) {
+  z-index: 17;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(4) a {
+  background-image: url("../images/20210331190721768683.jpg");
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(5) {
+  z-index: 16;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(5) a {
+  background-image: url("../images/20210331190835271583.jpg");
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(6) {
+  z-index: 15;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(6) a {
+  background-image: url("../images/20210331191351604723.jpg");
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(7) {
+  z-index: 14;
+}
+#mainPage #banner .content > ul:nth-child(1) > li:nth-child(7) a {
+  background-image: url("../images/20210331211805873046.jpg");
+}
+#mainPage #banner .content > ul:nth-child(2) {
+  position: absolute;
+  z-index: 999;
+  bottom: 72px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#mainPage #banner .content > ul:nth-child(2) li {
+  margin: 10px;
+  float: left;
+  width: 8px;
+  height: 8px;
+}
+#mainPage #banner .content > ul:nth-child(2) li a {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #bbb;
+  border-radius: 4px;
+}
+#mainPage #banner .content .down {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+}
+#mainPage #banner .content .down ul {
+  height: 60px;
+  width: 745px;
+  margin: 0 auto;
+}
+#mainPage #banner .content .down ul li {
+  float: left;
+  width: 33.333%;
+}
+#mainPage #banner .content .down ul li a {
+  display: inline-block;
+  height: 28px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 45px;
+}
+#mainPage #banner .content .down ul li:nth-child(1) a {
+  background: url(../images/pc.png) no-repeat;
+}
+#mainPage #banner .content .down ul li:nth-child(2) a {
+  background: url(../images/mac.png) no-repeat;
+}
+#mainPage #banner .content .down ul li:nth-child(3) a {
+  background: url(../images/andriod.png) no-repeat;
+}
+#mainPage #banner .content .pre,
+#mainPage #banner .content .next {
+  position: absolute;
+  z-index: 999;
+  width: 60px;
+  height: 120px;
+  margin-top: -60px;
+  top: 50%;
+  background: url("../images/sprite.png") no-repeat;
+  cursor: pointer;
+  display: none;
+}
+#mainPage #banner .content:hover .pre,
+#mainPage #banner .content:hover .next {
+  display: block;
+}
+#mainPage #banner .content .pre {
+  left: 0;
+  background-position: 0 -755px;
+}
+#mainPage #banner .content .pre:hover {
+  background-position: 0 -880px;
+}
+#mainPage #banner .content .next {
+  right: 0;
+  background-position: 0 -1130px;
+}
+#mainPage #banner .content .next:hover {
+  background-position: 0 -1005px;
+}
+#mainPage #music_list {
+  width: 1000px;
+  margin: 40px auto 0;
+}
+#mainPage #music_list > .left .title .select_list,
+#mainPage #music_list .right .title .select_list {
+  height: 60px;
+  width: 50%;
+  float: left;
+}
+#mainPage #music_list > .left .title .more,
+#mainPage #music_list .right .title .more {
+  float: right;
+  margin-top: 3px;
+}
+#mainPage #music_list > .left .title .more a,
+#mainPage #music_list .right .title .more a {
+  color: #999;
+  text-decoration: none;
+  font-size: 13px;
+}
+#mainPage #music_list > .left .title .more a:hover,
+#mainPage #music_list .right .title .more a:hover {
+  color: #0c8ed9;
+}
+#mainPage #music_list > .left {
+  width: 660px;
+  float: left;
+}
+#mainPage #music_list > .left .title .select_list {
+  background: url("../images/selectlist.jpg") no-repeat;
+}
+#mainPage #music_list > .left .content .d {
+  float: left;
+  position: relative;
+  width: 325px;
+  height: 325px;
+}
+#mainPage #music_list > .left .content .d .cptT {
+  position: absolute;
+  width: 152px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  color: #fff;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding-right: 8px;
+  background: url("../images/cptTBg.png") no-repeat;
+}
+#mainPage #music_list > .left .content .d .cptT i {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background: url("../images/sprite.png") no-repeat 0 -267px;
+  margin-right: 15px;
+}
+#mainPage #music_list > .left .content .d img {
+  width: 100%;
+  height: 100%;
+}
+#mainPage #music_list > .left .content .d .cptB {
+  position: absolute;
+  bottom: 0;
+  width: 309px;
+  height: 38px;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+#mainPage #music_list > .left .content .d .cptB p:nth-child(1) {
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#mainPage #music_list > .left .content .d .cptB p:nth-child(2) {
+  color: #cfcfcf;
+}
+#mainPage #music_list > .left .content .d .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px;
+  height: 325px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  visibility: hidden;
+}
+#mainPage #music_list > .left .content .d .cover a:nth-child(1) {
+  display: inline-block;
+  width: 325px;
+  height: 325px;
+}
+#mainPage #music_list > .left .content .d .cover a:nth-child(2) {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite.png") 0 -401px;
+  display: none;
+}
+#mainPage #music_list > .left .content .d .cover a:nth-child(2):hover {
+  background-position: 0 -360px;
+}
+#mainPage #music_list > .left .content .d:hover .cover {
+  visibility: visible;
+}
+#mainPage #music_list > .left .content .d:hover .cover a:nth-child(2) {
+  display: block;
+}
+#mainPage #music_list > .left .content .x {
+  width: 335px;
+  height: 325px;
+  float: left;
+}
+#mainPage #music_list > .left .content .x .d1,
+#mainPage #music_list > .left .content .x .d2,
+#mainPage #music_list > .left .content .x .d3,
+#mainPage #music_list > .left .content .x .d4 {
+  margin: 0 0 5px 7px;
+  float: left;
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+#mainPage #music_list > .left .content .x .d1 .cptT,
+#mainPage #music_list > .left .content .x .d2 .cptT,
+#mainPage #music_list > .left .content .x .d3 .cptT,
+#mainPage #music_list > .left .content .x .d4 .cptT {
+  position: absolute;
+  width: 152px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  color: #fff;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding-right: 8px;
+  background: url("../images/cptTBg.png") no-repeat;
+}
+#mainPage #music_list > .left .content .x .d1 .cptT i,
+#mainPage #music_list > .left .content .x .d2 .cptT i,
+#mainPage #music_list > .left .content .x .d3 .cptT i,
+#mainPage #music_list > .left .content .x .d4 .cptT i {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background: url("../images/sprite.png") no-repeat 0 -267px;
+  margin-right: 15px;
+}
+#mainPage #music_list > .left .content .x .d1 img,
+#mainPage #music_list > .left .content .x .d2 img,
+#mainPage #music_list > .left .content .x .d3 img,
+#mainPage #music_list > .left .content .x .d4 img {
+  width: 100%;
+  height: 100%;
+}
+#mainPage #music_list > .left .content .x .d1 .cptB,
+#mainPage #music_list > .left .content .x .d2 .cptB,
+#mainPage #music_list > .left .content .x .d3 .cptB,
+#mainPage #music_list > .left .content .x .d4 .cptB {
+  position: absolute;
+  bottom: 0;
+  width: 144px;
+  height: 38px;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+#mainPage #music_list > .left .content .x .d1 .cptB p:nth-child(1),
+#mainPage #music_list > .left .content .x .d2 .cptB p:nth-child(1),
+#mainPage #music_list > .left .content .x .d3 .cptB p:nth-child(1),
+#mainPage #music_list > .left .content .x .d4 .cptB p:nth-child(1) {
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#mainPage #music_list > .left .content .x .d1 .cptB p:nth-child(2),
+#mainPage #music_list > .left .content .x .d2 .cptB p:nth-child(2),
+#mainPage #music_list > .left .content .x .d3 .cptB p:nth-child(2),
+#mainPage #music_list > .left .content .x .d4 .cptB p:nth-child(2) {
+  color: #cfcfcf;
+}
+#mainPage #music_list > .left .content .x .d1 .cover,
+#mainPage #music_list > .left .content .x .d2 .cover,
+#mainPage #music_list > .left .content .x .d3 .cover,
+#mainPage #music_list > .left .content .x .d4 .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  visibility: hidden;
+}
+#mainPage #music_list > .left .content .x .d1 .cover a:nth-child(1),
+#mainPage #music_list > .left .content .x .d2 .cover a:nth-child(1),
+#mainPage #music_list > .left .content .x .d3 .cover a:nth-child(1),
+#mainPage #music_list > .left .content .x .d4 .cover a:nth-child(1) {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+}
+#mainPage #music_list > .left .content .x .d1 .cover a:nth-child(2),
+#mainPage #music_list > .left .content .x .d2 .cover a:nth-child(2),
+#mainPage #music_list > .left .content .x .d3 .cover a:nth-child(2),
+#mainPage #music_list > .left .content .x .d4 .cover a:nth-child(2) {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite.png") 0 -401px;
+  display: none;
+}
+#mainPage #music_list > .left .content .x .d1 .cover a:nth-child(2):hover,
+#mainPage #music_list > .left .content .x .d2 .cover a:nth-child(2):hover,
+#mainPage #music_list > .left .content .x .d3 .cover a:nth-child(2):hover,
+#mainPage #music_list > .left .content .x .d4 .cover a:nth-child(2):hover {
+  background-position: 0 -360px;
+}
+#mainPage #music_list > .left .content .x .d1:hover .cover,
+#mainPage #music_list > .left .content .x .d2:hover .cover,
+#mainPage #music_list > .left .content .x .d3:hover .cover,
+#mainPage #music_list > .left .content .x .d4:hover .cover {
+  visibility: visible;
+}
+#mainPage #music_list > .left .content .x .d1:hover .cover a:nth-child(2),
+#mainPage #music_list > .left .content .x .d2:hover .cover a:nth-child(2),
+#mainPage #music_list > .left .content .x .d3:hover .cover a:nth-child(2),
+#mainPage #music_list > .left .content .x .d4:hover .cover a:nth-child(2) {
+  display: block;
+}
+#mainPage #music_list > .right {
+  width: 318px;
+  float: right;
+}
+#mainPage #music_list > .right .title .select_list {
+  background: url("../images/hotlist.jpg") no-repeat;
+}
+#mainPage #music_list > .right .content li {
+  margin-bottom: 15px;
+}
+#mainPage #music_list > .right .content li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+#mainPage #music_list > .right .content .d1 {
+  background: #f6f6f6;
+  position: relative;
+}
+#mainPage #music_list > .right .content .d1 img {
+  width: 98px;
+  height: 98px;
+  float: left;
+}
+#mainPage #music_list > .right .content .d1 .text {
+  float: right;
+  width: 200px;
+  padding: 20px 0 0 10px;
+  font-size: 14px;
+  position: relative;
+}
+#mainPage #music_list > .right .content .d1 .text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  width: 180px;
+}
+#mainPage #music_list > .right .content .d1 .text .p1 {
+  color: #333;
+  font-weight: 700;
+}
+#mainPage #music_list > .right .content .d1 .text .p2 {
+  color: #555;
+}
+#mainPage #music_list > .right .content .d1 .text i {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  background: url("../images/sprite.png") 0 -322px;
+  position: absolute;
+  right: 10px;
+  top: 38px;
+}
+#mainPage #music_list > .right .content .d1 .cover {
+  width: 98px;
+  height: 98px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#mainPage #music_list > .right .content .d1 .cover .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite.png") no-repeat 0 -401px;
+}
+#mainPage #music_list > .right .content .d1 .cover .btn:hover {
+  background-position: 0 -360px;
+}
+#mainPage #music_list > .right .content .d1:hover .cover {
+  display: block;
+}
+#mainPage .ad {
+  width: 1000px;
+  margin: 15px auto 40px;
+}
+#mainPage .ad img {
+  width: 1000px;
+  height: 80px;
+}
+#mainPage #music_and_mv {
+  width: 1000px;
+  margin: 0 auto 35px;
+}
+#mainPage #music_and_mv > .left {
+  width: 650px;
+  height: 370px;
+  float: left;
+}
+#mainPage #music_and_mv > .left .title {
+  height: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+#mainPage #music_and_mv > .left .title h3 {
+  width: 115px;
+  height: 30px;
+  float: left;
+  margin-right: 24px;
+  background: url("../images/newlist.jpg") no-repeat;
+}
+#mainPage #music_and_mv > .left .title .text {
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 14px;
+}
+#mainPage #music_and_mv > .left .title .text span {
+  margin-right: 25px;
+  cursor: pointer;
+}
+#mainPage #music_and_mv > .left .title .text .active {
+  color: #009af3;
+}
+#mainPage #music_and_mv > .left .title .play_button {
+  height: 30px;
+  width: 90px;
+  float: right;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+}
+#mainPage #music_and_mv > .left .title .play_button .icon,
+#mainPage #music_and_mv > .left .title .play_button .text {
+  display: inline-block;
+}
+#mainPage #music_and_mv > .left .title .play_button .icon {
+  width: 15px;
+  height: 15px;
+  background: url("../images/sprite.png") no-repeat 0 -303px;
+  vertical-align: middle;
+  margin-left: 9px;
+}
+#mainPage #music_and_mv > .left .title .play_button .text {
+  line-height: 30px;
+  color: #555;
+  font-size: 13px;
+}
+#mainPage #music_and_mv > .left .title .play_button:hover {
+  border: 1px solid #009af3;
+}
+#mainPage #music_and_mv > .left .title .play_button:hover .icon {
+  background-position: 0 -341px;
+}
+#mainPage #music_and_mv > .left .title .play_button:hover .text {
+  color: #009af3;
+}
+#mainPage #music_and_mv > .left .content {
+  padding-top: 10px;
+}
+#mainPage #music_and_mv > .left .content li {
+  padding: 0 10px;
+}
+#mainPage #music_and_mv > .left .content li a {
+  display: block;
+  height: 35px;
+  float: left;
+  line-height: 35px;
+  font-size: 13px;
+  max-width: 500px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+#mainPage #music_and_mv > .left .content li .first_icon {
+  display: inline-block;
+  width: 21px;
+  height: 12px;
+  margin: 11px 0 0 8px;
+  background: url("../images/first.png") no-repeat;
+}
+#mainPage #music_and_mv > .left .content li .right_btn {
+  height: 35px;
+  float: right;
+  display: block;
+  position: relative;
+}
+#mainPage #music_and_mv > .left .content li .right_btn span {
+  display: block;
+  height: 100%;
+}
+#mainPage #music_and_mv > .left .content li .right_btn span:nth-child(1) {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  display: none;
+  background: url("../images/icon_splice.png") no-repeat;
+}
+#mainPage #music_and_mv > .left .content li .right_btn span:nth-child(2) {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 45px;
+  top: 10px;
+  display: none;
+  background: url("../images/icon_splice.png") no-repeat -90px 0;
+}
+#mainPage #music_and_mv > .left .content li .right_btn span:nth-child(3) {
+  line-height: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#mainPage #music_and_mv > .left .content li:hover {
+  background-color: #f5f8fb;
+  color: #009af3;
+}
+#mainPage #music_and_mv > .left .content li:hover a {
+  color: #009af3;
+}
+#mainPage #music_and_mv > .left .content li:hover .right_btn span:nth-child(1),
+#mainPage #music_and_mv > .left .content li:hover .right_btn span:nth-child(2) {
+  display: block;
+}
+#mainPage #music_and_mv > .left .content li:hover .right_btn span:nth-child(1):hover,
+#mainPage #music_and_mv > .left .content li:hover .right_btn span:nth-child(2):hover {
+  cursor: pointer;
+}
+#mainPage #music_and_mv > .left .content li:hover .right_btn span:nth-child(1):hover {
+  background-position: 0 -30px;
+}
+#mainPage #music_and_mv > .left .content li:hover .right_btn span:nth-child(2):hover {
+  background-position: -90px -30px;
+}
+#mainPage #music_and_mv > .left .content li:hover .first_icon {
+  display: none;
+}
+#mainPage #music_and_mv > .left .pager {
+  text-align: center;
+  width: 64px;
+  margin: 0 auto;
+}
+#mainPage #music_and_mv > .left .pager .p {
+  font-size: 12px;
+  color: #8d8d8d;
+  display: inline-block;
+}
+#mainPage #music_and_mv > .left .pager .pre,
+#mainPage #music_and_mv > .left .pager .next {
+  width: 10px;
+  height: 12px;
+  background: url("../images/pageChange.jpg") no-repeat;
+  margin-top: 5px;
+}
+#mainPage #music_and_mv > .left .pager .pre:hover,
+#mainPage #music_and_mv > .left .pager .next:hover {
+  cursor: pointer;
+}
+#mainPage #music_and_mv > .left .pager .pre {
+  float: left;
+}
+#mainPage #music_and_mv > .left .pager .next {
+  float: right;
+  background-position: -9px -14px;
+}
+#mainPage #music_and_mv > .right {
+  width: 320px;
+  float: right;
+}
+#mainPage #music_and_mv > .right .title {
+  padding-bottom: 20px;
+}
+#mainPage #music_and_mv > .right .title .icon {
+  width: 102px;
+  height: 30px;
+  float: left;
+  background: url("../images/albumlist.jpg") no-repeat;
+}
+#mainPage #music_and_mv > .right .title .more {
+  height: 30px;
+  float: right;
+}
+#mainPage #music_and_mv > .right .title .more a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-decoration: none;
+  color: #999;
+}
+#mainPage #music_and_mv > .right .title .more a:hover {
+  color: #009af3;
+}
+#mainPage #music_and_mv > .right .content .top {
+  height: 175px;
+  position: relative;
+}
+#mainPage #music_and_mv > .right .content .top img {
+  height: 100%;
+  width: 100%;
+}
+#mainPage #music_and_mv > .right .content .top .cover {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.3);
+}
+#mainPage #music_and_mv > .right .content .top .cover span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../images/sprite.png") no-repeat 0 -542px;
+}
+#mainPage #music_and_mv > .right .content .top .cover span:hover {
+  background-position: 0 -489px;
+}
+#mainPage #music_and_mv > .right .content .top .c {
+  width: 304px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 8px;
+}
+#mainPage #music_and_mv > .right .content .top .c p {
+  font-size: 14px;
+  line-height: 19px;
+}
+#mainPage #music_and_mv > .right .content .top .c p:nth-child(1) {
+  color: #fff;
+}
+#mainPage #music_and_mv > .right .content .top .c p:nth-child(2) {
+  color: #cfcfcf;
+}
+#mainPage #music_and_mv > .right .content .top:hover .cover {
+  display: block;
+}
+#mainPage #music_and_mv > .right .content .bottom {
+  margin-top: 12px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .image,
+#mainPage #music_and_mv > .right .content .bottom .right .image {
+  position: relative;
+  font-size: 0;
+  margin-bottom: 6px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .image img,
+#mainPage #music_and_mv > .right .content .bottom .right .image img {
+  width: 154px;
+  height: 84px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .image a,
+#mainPage #music_and_mv > .right .content .bottom .right .image a {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#mainPage #music_and_mv > .right .content .bottom .left .image a span,
+#mainPage #music_and_mv > .right .content .bottom .right .image a span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("../images/sprite.png") no-repeat 0 -542px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .image a span:hover,
+#mainPage #music_and_mv > .right .content .bottom .right .image a span:hover {
+  background-position: 0 -489px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .text,
+#mainPage #music_and_mv > .right .content .bottom .right .text {
+  width: 154px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .text p,
+#mainPage #music_and_mv > .right .content .bottom .right .text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .text p:nth-child(1),
+#mainPage #music_and_mv > .right .content .bottom .right .text p:nth-child(1) {
+  font-size: 14px;
+}
+#mainPage #music_and_mv > .right .content .bottom .left .text p:nth-child(2),
+#mainPage #music_and_mv > .right .content .bottom .right .text p:nth-child(2) {
+  font-size: 12px;
+  color: #888;
+}
+#mainPage #music_and_mv > .right .content .bottom .left:hover .image a,
+#mainPage #music_and_mv > .right .content .bottom .right:hover .image a {
+  display: block;
+}
+#mainPage #music_and_mv > .right .content .bottom .left:hover .text p:nth-child(1),
+#mainPage #music_and_mv > .right .content .bottom .right:hover .text p:nth-child(1) {
+  color: #009af3;
+}
+#mainPage #music_and_mv > .right .content .bottom .left {
+  float: left;
+}
+#mainPage #music_and_mv > .right .content .bottom .right {
+  float: right;
+}
+#mainPage #books {
+  width: 1000px;
+  margin: 0 auto 55px;
+}
+#mainPage #books .title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+#mainPage #books .title div {
+  height: 30px;
+  float: left;
+  line-height: 30px;
+}
+#mainPage #books .title .icon {
+  width: 120px;
+  background: url("../images/longaudio.jpg") no-repeat 0 0;
+}
+#mainPage #books .title .type span {
+  margin-left: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+}
+#mainPage #books .title .type .active {
+  color: #009af3;
+}
+#mainPage #books .title .more {
+  float: right;
+}
+#mainPage #books .title .more a {
+  color: #999;
+  text-decoration: none;
+}
+#mainPage #books .title .more a:hover {
+  color: #009af3;
+}
+#mainPage #books .content > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#mainPage #books .content > ul > li {
+  width: 318px;
+  height: 71px;
+  display: flex;
+  margin-bottom: 20px;
+}
+#mainPage #books .content > ul > li > .icon {
+  width: 71px;
+  position: relative;
+}
+#mainPage #books .content > ul > li > .icon img {
+  display: block;
+  width: 71px;
+  height: 71px;
+}
+#mainPage #books .content > ul > li > .icon a {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#mainPage #books .content > ul > li > .icon a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite.png") no-repeat 0 -401px;
+}
+#mainPage #books .content > ul > li > .icon a span:hover {
+  background-position: 0 -360px;
+}
+#mainPage #books .content > ul > li > .icon:hover a {
+  display: block;
+}
+#mainPage #books .content > ul > li a {
+  text-decoration: none;
+}
+#mainPage #books .content > ul > li a .text {
+  width: 247px;
+  height: 71px;
+  position: relative;
+  padding-left: 10px;
+}
+#mainPage #books .content > ul > li a .text p {
+  width: 166px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#mainPage #books .content > ul > li a .text p:nth-child(1) {
+  font-size: 13px;
+  color: #000;
+  margin-top: 20px;
+}
+#mainPage #books .content > ul > li a .text p:nth-child(2) {
+  font-size: 11px;
+  color: #999;
+  margin-top: 7px;
+}
+#mainPage #books .content > ul > li a .text .count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 20px;
+  line-height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #8d8d8d;
+  font-size: 11px;
+  padding-left: 18px;
+  background: url("../images/d90b2d340c9b3dd69c84a071dc65bc2a.png") no-repeat left center;
+  background-size: 13px auto;
+}
+#mainPage #books .content > ul > li a .text:hover {
+  background-color: #f7f7f7;
+}
+#mainPage #books .content > ul > li a .text:hover p:nth-child(1),
+#mainPage #books .content > ul > li a .text:hover .count {
+  color: #009af3;
+}
+#mainPage #books .content > ul > li a .text:hover .count {
+  background-image: url("../images/0d40f458595a412b025525432953fcdc.png");
+}
+#mainPage #radio_and_singer {
+  width: 1000px;
+  margin: 0 auto 30px;
+}
+#mainPage #radio_and_singer .radio {
+  width: 650px;
+  float: left;
+}
+#mainPage #radio_and_singer .radio .title {
+  height: 30px;
+  padding-bottom: 20px;
+}
+#mainPage #radio_and_singer .radio .title .icon {
+  width: 120px;
+  height: 30px;
+  float: left;
+  background: url("../images/hotredio.jpg") no-repeat;
+}
+#mainPage #radio_and_singer .radio .title .more {
+  float: right;
+}
+#mainPage #radio_and_singer .radio .title .more a {
+  line-height: 30px;
+  text-decoration: none;
+  color: #999;
+}
+#mainPage #radio_and_singer .radio .title .more:hover a {
+  color: #009af3;
+}
+#mainPage #radio_and_singer .radio .content ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#mainPage #radio_and_singer .radio .content ul li {
+  position: relative;
+  width: 100px;
+  margin: 0 30px 18px 0;
+}
+#mainPage #radio_and_singer .radio .content ul li:nth-child(5),
+#mainPage #radio_and_singer .radio .content ul li:nth-child(10) {
+  margin-right: 0;
+}
+#mainPage #radio_and_singer .radio .content ul li .icon {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+#mainPage #radio_and_singer .radio .content ul li .icon img {
+  width: 100px;
+  height: 100px;
+}
+#mainPage #radio_and_singer .radio .content ul li p {
+  text-align: center;
+  font-size: 14px;
+}
+#mainPage #radio_and_singer .radio .content ul li a {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+#mainPage #radio_and_singer .radio .content ul li a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  background: url("../images/sprite.png") no-repeat 0 -401px;
+}
+#mainPage #radio_and_singer .radio .content ul li a span:hover {
+  background-position: 0 -360px;
+}
+#mainPage #radio_and_singer .radio .content ul li:hover {
+  cursor: pointer;
+}
+#mainPage #radio_and_singer .radio .content ul li:hover a {
+  display: block;
+}
+#mainPage #radio_and_singer .radio .content ul li:hover p {
+  color: #009af3;
+}
+#mainPage #radio_and_singer .singer {
+  width: 330px;
+  float: right;
+}
+#mainPage #radio_and_singer .singer .title {
+  height: 30px;
+  padding-bottom: 20px;
+}
+#mainPage #radio_and_singer .singer .title .icon {
+  width: 120px;
+  height: 30px;
+  float: left;
+  background: url("../images/hotredio.jpg") no-repeat;
+}
+#mainPage #radio_and_singer .singer .title .type {
+  line-height: 30px;
+}
+#mainPage #radio_and_singer .singer .title .type span {
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 14px;
+}
+#mainPage #radio_and_singer .singer .title .type span:nth-last-child(1) {
+  color: #999;
+}
+#mainPage #radio_and_singer .singer .title .type .active {
+  color: #009af3;
+}
+#mainPage #radio_and_singer .singer .content div {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+#mainPage #radio_and_singer .singer .content .d1,
+#mainPage #radio_and_singer .singer .content .d2 {
+  position: relative;
+}
+#mainPage #radio_and_singer .singer .content .d1 img,
+#mainPage #radio_and_singer .singer .content .d2 img {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+#mainPage #radio_and_singer .singer .content .d1 p,
+#mainPage #radio_and_singer .singer .content .d2 p {
+  color: #fff;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 15px;
+  z-index: 999;
+}
+#mainPage #radio_and_singer .singer .content .d1 a,
+#mainPage #radio_and_singer .singer .content .d2 a {
+  width: 160px;
+  height: 160px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+#mainPage #radio_and_singer .singer .content .d1:hover a,
+#mainPage #radio_and_singer .singer .content .d2:hover a {
+  display: block;
+}
+#mainPage #radio_and_singer .singer .content .d3,
+#mainPage #radio_and_singer .singer .content .d4,
+#mainPage #radio_and_singer .singer .content .d5 {
+  position: relative;
+}
+#mainPage #radio_and_singer .singer .content .d3 img,
+#mainPage #radio_and_singer .singer .content .d4 img,
+#mainPage #radio_and_singer .singer .content .d5 img {
+  display: block;
+  width: 105px;
+  height: 105px;
+}
+#mainPage #radio_and_singer .singer .content .d3 p,
+#mainPage #radio_and_singer .singer .content .d4 p,
+#mainPage #radio_and_singer .singer .content .d5 p {
+  color: #fff;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 15px;
+  z-index: 999;
+}
+#mainPage #radio_and_singer .singer .content .d3 a,
+#mainPage #radio_and_singer .singer .content .d4 a,
+#mainPage #radio_and_singer .singer .content .d5 a {
+  width: 105px;
+  height: 105px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+#mainPage #radio_and_singer .singer .content .d3:hover a,
+#mainPage #radio_and_singer .singer .content .d4:hover a,
+#mainPage #radio_and_singer .singer .content .d5:hover a {
+  display: block;
+}
+#mainPage #radio_and_singer .singer .content .page_btn {
+  text-align: center;
+  float: none;
+}
+#mainPage #radio_and_singer .singer .content .page_btn span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #999;
+  margin-right: 10px;
+}
+#mainPage #radio_and_singer .singer .content .page_btn .active {
+  background: #009af3;
+}
+#mainPage #friend {
+  width: 1000px;
+  margin: 0 auto 20px;
+}
+#mainPage #friend .title {
+  padding-bottom: 35px;
+}
+#mainPage #friend .title .icon {
+  width: 102px;
+  height: 30px;
+  float: left;
+  background: url("../images/albumlist.jpg") no-repeat;
+}
+#mainPage #friend .title .more {
+  height: 30px;
+  float: right;
+}
+#mainPage #friend .title .more a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  text-decoration: none;
+  color: #999;
+}
+#mainPage #friend .title .more a:hover {
+  color: #009af3;
+}
+#mainPage #friend .content a {
+  float: left;
+  width: 125px;
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 20px;
+}
+#mainPage #friend .content a:hover {
+  color: #009af3;
+}
+#mainPage #footer {
+  height: 319px;
+  background: #2c323b;
+}
+#mainPage #footer .top {
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  color: #b1b3b9;
+  font-size: 12px;
+  border-bottom: 1px solid #3d424a;
+}
+#mainPage #footer .top a {
+  color: #b1b3b9;
+  text-decoration: none;
+  margin: 0 9px;
+}
+#mainPage #footer .text {
+  margin-top: 42px;
+}
+#mainPage #footer .text p {
+  text-align: center;
+  color: #b1b3b9;
+  height: 30px;
+  line-height: 30px;
+}
+#mainPage #footer .text p:nth-child(2) span {
+  position: relative;
+  left: 2px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/footer_icon.png") no-repeat;
+  display: inline-block;
+}
+#mainPage #footer .text p:nth-child(4) span {
+  position: relative;
+  left: 2px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon_yuewangga1.png") no-repeat;
+  display: inline-block;
+}
+/*# sourceMappingURL=index.css.map */
